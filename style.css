@@ -1,0 +1,85 @@
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #7f7f7f; /* Track (background) color */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #7300ff; /* Scrollbar thumb color */
+    border-radius: 0px;      /* Roundness of the thumb */  }
+
+.main{
+    display: flex;
+    gap: 10px;
+}
+
+
+.funding, .other, .school{
+    background: #ffffff ;
+    height: 590px;
+    width: 33.5%;
+    text-align: center;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    overflow-y: auto;
+}
+
+.textF, .textS, .textO{
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    background-color: #ffc800;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    height: 35px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    padding: 10px;
+    margin: 10px;
+    background-color: #dbd8d8;
+    color: rgb(79, 0, 148);
+    text-decoration: none;
+    display: flex;
+}
+
+a:hover {
+    background-color: #b0b0b0;
+}
+
+/* 🔽 When screen width is 835px or less, stack elements vertically */
+@media screen and (max-width: 835px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .funding, .other, .school {
+        width: 95%; /* Adjust width for better fit */
+        max-width: 400px;
+    }
+}
+
+/* 🔽 Further optimize for mobile screens (600px and below) */
+@media screen and (max-width: 600px) {
+    .textF, .textS, .textO {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
